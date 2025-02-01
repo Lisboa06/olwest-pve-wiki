@@ -1,0 +1,65 @@
+:root {
+    --title-color1: #333333;
+    --color1: #171818;
+    --bg-color1: #EFF1E6;
+    
+    --title-color2: #0d0d0e;
+    --color2: #000000;
+    --bg-color2: #d7dee2;
+
+    --bg-color3: #ebece1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #333333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mob-section {
+    /* background-color: var(--bg-color2); */
+    color: var(--color2);
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mob {
+    width: calc(50% - 20px);
+    max-width: 360px;
+    margin: 10px auto 13px auto;
+    padding: 14px;
+    text-align: center;
+    border-radius: 17px;
+    transition: .3s;
+    background-color:var(--bg-color3);
+}
+.mob:hover {
+    transition: .3s;
+    box-shadow: 2px 2px 12px #00000036;
+}
+
+.mob-infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mob-infos span {
+    /* background-color: aqua; */
+    /* text-align: left; */
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+.mob-infos .mob-info-icon {
+    width: 30px;
+    margin: 3px 3px 3px 0;
+}
