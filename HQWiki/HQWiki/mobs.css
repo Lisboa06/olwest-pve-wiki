@@ -1,0 +1,90 @@
+body {
+    background-color: #f4f1e9;
+    font-family: Arial, sans-serif;
+}
+
+.mob-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+    align-items: stretch; /* Faz com que todos tenham a mesma altura */
+    max-width: 1200px; /* Define um limite de largura para evitar desalinhamento */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.mob-card {
+    flex: 1 1 calc(33.333% - 20px); /* Distribui os cards igualmente em 3 colunas */
+    max-width: 350px; /* Define um tamanho fixo para evitar que um card fique maior que o outro */
+    background: #fdf8f2; /* Cor de fundo */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantém o conteúdo alinhado */
+    height: 100%; /* Todos os cards terão a mesma altura */
+}
+
+.mob-img {
+    width: 100px;
+    height: 100px; /* Garante que todas as imagens tenham a mesma altura */
+    object-fit: contain; /* Mantém a proporção da imagem sem esticar */
+    display: block;
+    margin: 0 auto;
+}
+
+.mob-info {
+    flex-grow: 1; /* Faz com que a seção de informações cresça igualmente */
+}
+
+.mob-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5a3e1b;
+}
+
+.mob-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.mob-drop-title {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #8b4513;
+}
+
+.mob-drops {
+    list-style: none;
+    padding: 0;
+}
+
+.mob-drops li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.mob-info-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Garante que os cards fiquem bem distribuídos mesmo em telas menores */
+@media (max-width: 1024px) {
+    .mob-card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards por linha em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .mob-card {
+        flex: 1 1 100%; /* 1 card por linha em telas muito pequenas */
+    }
+}

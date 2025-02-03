@@ -1,0 +1,66 @@
+body {
+    background-color: #f4f1e9;
+    font-family: Arial, sans-serif;
+}
+
+.mob-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px; /* Atualizado para evitar centralização */
+    text-align: center;
+    height: 90%; /* Faz com que todos os cards usem o mesmo tamanho vertical */
+    max-width: 350px; /* Tamanho consistente para largura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mob-card:hover {
+    transform: scale(1.05); /* Aumenta o card em 5% */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+
+}
+
+.mob-img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mob-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5a3e1b;
+}
+
+.mob-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.mob-drop-title {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #8b4513;
+}
+
+.mob-drops {
+    list-style: none;
+    padding: 0;
+}
+
+.mob-drops li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.mob-info-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
